@@ -15,7 +15,7 @@ alert_text = alert.text
 if alert_text == "I am an alert box!":
     print(alert_text)
 else:
-    print("Error. The alert is:", alert_text)
+    print("Error. The alert text is:", alert_text)
 alert.accept()
 time.sleep(3)
 current_page = driver.current_url
