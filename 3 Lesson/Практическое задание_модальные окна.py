@@ -18,7 +18,8 @@ else:
     print("Error. The alert is:", alert_text)
 alert.accept()
 time.sleep(3)
-current_window = driver.current_window_handle
+current_page = driver.current_url
+print(current_page)
 driver.execute_script("window.open();")
 window_after = driver.window_handles[1]
 driver.switch_to.window(window_after)
